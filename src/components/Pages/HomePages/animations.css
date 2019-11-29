@@ -1,0 +1,27 @@
+.AnimationOfOpacity {
+  opacity: 1;
+
+  transition: opacity 3s;
+}
+
+/* Standard syntax */
+.AnimationOfOpacity {
+  transition-timing-function: linear;
+}
+.AnimationOfOpacity:hover {
+  opacity: 1;
+}
+
+.OpacityFinished {
+  opacity: 0.6;
+
+  transition: opacity 3s;
+}
+
+/* Standard syntax */
+.OpacityFinished {
+  transition-timing-function: linear;
+}
+.OpacityFinished:hover {
+  opacity: 1;
+}
