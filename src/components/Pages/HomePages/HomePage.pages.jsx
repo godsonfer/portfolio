@@ -6,6 +6,7 @@ import { CardContent } from "@material-ui/core";
 import { Grid, Container, Typography } from "@material-ui/core";
 import SwipeableTextMobileStepper from "./Caroussel.page";
 import "./animations.css";
+import CodingC from "../../Cards/CodingC.component";
 
 class HomePage extends React.Component {
   _opacity() {
@@ -15,6 +16,7 @@ class HomePage extends React.Component {
   _opacityFinished() {
     return "OpacityFinished";
   }
+
   render() {
     return (
       <div>
@@ -83,7 +85,9 @@ class HomePage extends React.Component {
                   </Typography>
                 </CardContent>
               </Card>
-              ;
+            </Grid>
+            <Grid>
+              <CodingC />
             </Grid>
           </Grid>
         </Container>

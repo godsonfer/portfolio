@@ -1,0 +1,15 @@
+.paper :hover {
+  cursor: pointer;
+  transform: rotate(1deg);
+  transition: transform 2s ease-in-out;
+  color: darkblue;
+}
+
+.image {
+  width: auto;
+  height: 300px;
+}
+
+.frameworks {
+  height: 250px;
+}

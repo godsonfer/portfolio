@@ -9,6 +9,8 @@ import KeyboardArrowRight from "@material-ui/icons/KeyboardArrowRight";
 import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
 
+import "./animations.css";
+
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const tutorialSteps = [
@@ -39,6 +41,7 @@ const useStyles = makeStyles(theme => ({
     overflow: "hidden",
     width: "100%",
     opacity: 0.6,
+    height: "auto",
     animation: "all opacity 200 ease"
   },
   img: {

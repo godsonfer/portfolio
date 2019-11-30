@@ -31,7 +31,7 @@ const Header = () => (
       <Toolbar>
         <Grid item sm={7} spacing={2}>
           <Typography className={useStyles.title} variant="h6">
-            <Link href="/" color="inherit" underline="none">
+            <Link href="/" color="inherit" underline="none" className="title">
               KOUAGOU FERDINAND
             </Link>
           </Typography>
