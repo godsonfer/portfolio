@@ -1,93 +1,48 @@
-import React from "react";
 import FacebookIcon from "@material-ui/icons/Facebook";
-import YouTubeIcon from "@material-ui/icons/YouTube";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import YouTubeIcon from "@material-ui/icons/YouTube";
+import React from "react";
+import { Nav, Navbar, NavDropdown } from "react-bootstrap";
+
 import "./Header.scss";
 
-import { Link } from "@material-ui/core";
-import {
-  AppBar,
-  Typography,
-  makeStyles,
-  Toolbar,
-  Grid,
-  Button
-} from "@material-ui/core";
+const HeaderComponent = () => (
+  <div className="header">
+    <Navbar bg="info" fixed="top" expand="lg" className=" navbar">
+      <Navbar.Brand href="/">KOUAGOU FERDINAND</Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="mr-auto">
+          <Nav.Link href="/projects" className="option">
+            PROJETS
+          </Nav.Link>
 
-const useStyles = makeStyles(theme => ({
-  root: {
-    flexGrow: 1
-  },
+          <Nav.Link href="/contact" className="option">
+            CONTACT ME
+          </Nav.Link>
 
-  title: {
-    flexGrow: 1
-  }
-}));
+          <Nav.Link href="/news" className="option" variant="primary">
+            NEWS
+          </Nav.Link>
 
-const Header = () => (
-  <Grid sm={12}>
-    <AppBar position="fixed">
-      <Toolbar>
-        <Grid item sm={7} spacing={2}>
-          <Typography className={useStyles.title} variant="h6">
-            <Link href="/" color="inherit" underline="none" className="title">
-              KOUAGOU FERDINAND
-            </Link>
-          </Typography>
-        </Grid>
-
-        <Grid item sm spacing={4} className="">
-          <Button color="inherit">
-            <Link
-              color="inherit"
-              underline="none"
-              href="/projects"
-              className="option"
-            >
-              PROJETS
-            </Link>
-          </Button>
-
-          <Button color="inherit">
-            <Link
-              color="inherit"
-              underline="none"
-              href="/contact"
-              className="option"
-            >
-              ME CONTACTER
-            </Link>
-          </Button>
-          <Button color="inherit">
-            <Link
-              color="inherit"
-              underline="none"
-              href="/news"
-              className="option"
-            >
-              NOUVELLES
-            </Link>
-          </Button>
-        </Grid>
-        <Grid item sm spacing={2}>
-          <Button>
-            <FacebookIcon color="inherit" />
-          </Button>
-          <Button>
-            <InstagramIcon color="inherit" />
-          </Button>
-          <Button>
-            <LinkedInIcon color="inherit" />
-          </Button>
-
-          <Button>
-            <YouTubeIcon color="inherit" />
-          </Button>
-        </Grid>
-      </Toolbar>
-    </AppBar>
-  </Grid>
+          <NavDropdown title="SOCIAL MEDIAS" id="basic-nav-dropdown">
+            <NavDropdown.Item href="#action/3.1">
+              <FacebookIcon color="inherit" />
+            </NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.1">
+              <InstagramIcon color="inherit" />
+            </NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.1">
+              <LinkedInIcon color="inherit" />
+            </NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.1">
+              <YouTubeIcon color="inherit" />
+            </NavDropdown.Item>
+          </NavDropdown>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
+  </div>
 );
-
-export default Header;
+export default HeaderComponent;
