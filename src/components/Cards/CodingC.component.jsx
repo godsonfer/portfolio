@@ -72,27 +72,23 @@ function CodingC() {
             />
             <CardContent>
               {" "}
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
-              recusandae quasi impedit, at earum odio facilis ut maiores
-              corporis amet quis accusantium dolore alias quisquam. Numquam
-              maiores non aliquam at.
+             Javascript is the most popular language in the world. It is the second language world's most powerful and common.
+              This page is developed by using a javascript library. i like it !
             </CardContent>
           </Card>
         </Grid>
         <Grid item xs={12} sm={12}>
           <Card className={classes.paper}>
-            <CardHeader title="FRAMEWORK LIKE LARAVEL, REACT, IONIC, " />
+            <CardHeader title="Adds" />
             <CardMedia
               className="image"
               image="./../../dist/frameworks.JPG"
               title="Paella dish"
             />
             <CardContent>
+
               {" "}
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
-              recusandae quasi impedit, at earum odio facilis ut maiores
-              corporis amet quis accusantium dolore alias quisquam. Numquam
-              maiores non aliquam at.
+              <!--Begin: Star-Clicks.com HTML Code--><script type='text/javascript' src='https://www.star-clicks.com/secure/ads.php?pid=89999609650737179'></script><!-- End: Star-Clicks.com -->
             </CardContent>
           </Card>
         </Grid>

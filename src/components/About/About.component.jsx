@@ -7,7 +7,7 @@ class About extends Component {
     return (
       <div>
         <Card style={{ backgroundColor: "#eefd" }}>
-          <img src="../../dist/image.JPG" alt="img" height="200" />
+          <img src="" alt="img" height="200" />
           <CardContent>
             <Typography
               variant="body2"
