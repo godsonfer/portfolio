@@ -77,21 +77,6 @@ function CodingC() {
             </CardContent>
           </Card>
         </Grid>
-        <Grid item xs={12} sm={12}>
-          <Card className={classes.paper}>
-            <CardHeader title="Adds" />
-            <CardMedia
-              className="image"
-              image="./../../dist/frameworks.JPG"
-              title="Paella dish"
-            />
-            <CardContent>
-
-              {" "}
-              <!--Begin: Star-Clicks.com HTML Code--><script type='text/javascript' src='https://www.star-clicks.com/secure/ads.php?pid=89999609650737179'></script><!-- End: Star-Clicks.com -->
-            </CardContent>
-          </Card>
-        </Grid>
       </Grid>
     </div>
   );
