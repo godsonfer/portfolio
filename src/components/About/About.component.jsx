@@ -6,8 +6,14 @@ class About extends Component {
   render() {
     return (
       <div>
+
         <Card style={{ backgroundColor: "#eefd" }}>
           <img src="" alt="img" height="200" />
+            <div>
+                <a href="https://cryptagram.biz/ref/Ferdinand7" target="_blank">
+                    <img src="https://cryptagram.biz/assets/banners/en/CG-728-EN.gif"/>
+                </a>
+            </div>
           <CardContent>
             <Typography
               variant="body2"
@@ -19,6 +25,8 @@ class About extends Component {
               }}
             >
               {" "}
+
+
               I am a web and mobile developper as one of the fastest growing. My
               graduate have moved on to work for some of the biggest tech
               companies around the world like Apple, Google, Amazon, JP Morgan,
